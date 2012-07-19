@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery/jquery.mobile-1.1.0.min.css" />
+	<script type="text/javascript" src="jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery.mobile-1.1.0.min.js"></script>
+	
+	<style type="text/css" media="screen">
+		.li-desc,
+		.li-heading {
+			white-space: normal;
+		}
+		.li-heading {
+			font-weight: bold;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<div data-role="page">
+		<div data-role="header">
+			<a href="index.html" data-icon="home">Home</a>
+			<h1>Schedule</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" id="session-list">
+				<li data-role="list-divider">Wednesday</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">4:10 PM (F150)</p>
+						<p class="li-heading">MongoDB geospatial and Android</p>
+					</a>
+				</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">5:00 PM (F150)</p>
+						<p class="li-heading">Building a mobile, offline mapping stack using open tools &amp; data</p>
+					</a>
+				</li>
+				<li data-role="list-divider">Thursday</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">10:40 AM (F150)</p>
+						<p class="li-heading">PhoneGap : Cross the Gap from HTML5 to Mobile</p>
+					</a>
+				</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">11:30 AM (F150)</p>
+						<p class="li-heading">jQuery Mobile: Sites That Feel Like Apps</p>
+					</a>
+				</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">2:30 PM (F150)</p>
+						<p class="li-heading">Topics in Designing An Android Sensor Subsystem: Pitfalls and Considerations</p>
+					</a>
+				</li>
+				<li>
+					<a href="#session-4" data-transition="slide">
+						<p class="li-desc">1:40 PM (F150)</p>
+						<p class="li-heading">Mobile 3D Visualization</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="page" id="session-4">
+		<div data-role="header">
+			<a data-role="button" data-rel="back" data-icon="back">Schedule</a>
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<img src="anna-filina.jpg" />
+			<h3>jQuery Mobile: Sites That Feel Like Apps</h3>
+			<p>by Anna Filina (FooLab Inc.)</p>
+			<p>Thursday, Jul 19, 11:30 AM<br />F150</p>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Description</h3>
+					<p>jQuery Mobile is a cross-platform framework made for smartphones and tablets. With its HTML5 interface, it looks and feels like an app. This presentation will teach you how to quickly create a mobile front-end with little effort. It will also feature a use-case of adapting an existing web application to the mobile.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Feedback</h3>
+					<form action="form.php" method="post">
+						<label for="textarea-a">Tell us what you thought about this presentation:</label>
+						<textarea name="textarea" id="feedback-text"></textarea>
+						<button type="submit" data-inline="true">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" class="ui-bar" data-position="fixed">
+			<div data-role="controlgroup" data-type="horizontal">
+				Share:
+				<a data-role="button">Facebook</a>
+				<a data-role="button">Twitter</a>
+				<a data-role="button">E-mail</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
